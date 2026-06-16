@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samuel R — Computer Science student and web developer portfolio featuring deployed projects, technical skills, certifications, and contact details.">
+  <meta name="theme-color" content="#080b13">
+  <title>Samuel R | Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" data-panel-link="home" aria-label="Go to home">
+      <span class="brand-mark">SR</span>
+      <span class="brand-copy">
+        <strong>Samuel R</strong>
+        <small>Developer workspace</small>
+      </span>
+    </a>
+
+    <div class="topbar-actions">
+      <button class="command-button" id="commandButton" type="button" aria-label="Open quick navigation">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Quick jump</span>
+        <kbd>Ctrl K</kbd>
+      </button>
+      <a class="availability" href="mailto:samuelxxx1207@gmail.com">
+        <span class="status-dot"></span>
+        Open to opportunities
+      </a>
+    </div>
+  </header>
+
+  <aside class="dock" aria-label="Portfolio navigation">
+    <button class="dock-item active" type="button" data-target="home" aria-label="Home">
+      <i class="fa-solid fa-house"></i><span>Home</span>
+    </button>
+    <button class="dock-item" type="button" data-target="about" aria-label="About">
+      <i class="fa-solid fa-user"></i><span>About</span>
+    </button>
+    <button class="dock-item" type="button" data-target="skills" aria-label="Skills">
+      <i class="fa-solid fa-code"></i><span>Skills</span>
+    </button>
+    <button class="dock-item" type="button" data-target="projects" aria-label="Projects">
+      <i class="fa-solid fa-layer-group"></i><span>Projects</span>
+    </button>
+    <button class="dock-item" type="button" data-target="certificates" aria-label="Certificates">
+      <i class="fa-solid fa-certificate"></i><span>Certificates</span>
+    </button>
+    <button class="dock-item" type="button" data-target="resume" aria-label="Resume">
+      <i class="fa-solid fa-file-lines"></i><span>Resume</span>
+    </button>
+    <button class="dock-item" type="button" data-target="contact" aria-label="Contact">
+      <i class="fa-solid fa-paper-plane"></i><span>Contact</span>
+    </button>
+  </aside>
+
+  <main class="workspace" id="workspace">
+    <div class="panel-track" id="panelTrack">
+      <section class="panel active" id="home" data-panel="home" aria-labelledby="home-title">
+        <div class="panel-scroll">
+          <div class="hero-layout shell">
+            <div class="hero-copy">
+              <div class="eyebrow"><span></span> Computer Science Student · Web Developer</div>
+              <h1 id="home-title">I build clean web experiences that are <em>simple to use.</em></h1>
+              <p class="lead">I’m Samuel R, a B.E. Computer Science student from Tamil Nadu. I enjoy turning ideas into responsive websites and practical applications using beginner-friendly, reliable technologies.</p>
+
+              <div class="hero-actions">
+                <button class="button primary" type="button" data-jump="projects">
+                  Explore projects <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a class="button secondary" href="assets/resume.pdf" download="Samuel_R_Resume.pdf">
+                  <i class="fa-solid fa-download"></i> Download resume
+                </a>
+              </div>
+
+              <div class="hero-links" aria-label="Social links">
+                <a href="https://github.com/rsamuel1729-png" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/in/samuel-1207-r" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://leetcode.com/u/Sam120707/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i> LeetCode</a>
+              </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Samuel R profile card">
+              <div class="profile-orbit orbit-one"></div>
+              <div class="profile-orbit orbit-two"></div>
+              <div class="profile-card tilt-card">
+                <div class="profile-card-top">
+                  <span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span>
+                  <small>profile.json</small>
+                </div>
+                <div class="profile-photo-wrap">
+                  <img src="assets/photo.jpg" alt="Portrait of Samuel R">
+                </div>
+                <div class="profile-data">
+                  <p><span>name</span> "Samuel R"</p>
+                  <p><span>role</span> "Web Developer"</p>
+                  <p><span>focus</span> ["Frontend", "Java"]</p>
+                  <p><span>status</span> <b>"Learning & building"</b></p>
+                </div>
+              </div>
+              <div class="floating-chip chip-one"><i class="fa-brands fa-html5"></i> HTML</div>
+              <div class="floating-chip chip-two"><i class="fa-brands fa-java"></i> Java</div>
+              <div class="floating-chip chip-three"><i class="fa-brands fa-js"></i> JavaScript</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="about" data-panel="about" aria-labelledby="about-title">
+        <div class="panel-scroll">
+          <div class="shell content-shell">
+            <div class="section-heading">
+              <span class="section-number">01</span>
+              <div>
+                <p class="kicker">Behind the code</p>
+                <h2 id="about-title">About me</h2>
+              </div>
+              <p>I’m focused on learning by building useful, understandable projects.</p>
+            </div>
+
+            <div class="about-layout">
+              <article class="surface about-story tilt-card">
+                <div class="surface-label"><i class="fa-solid fa-terminal"></i> introduction.txt</div>
+                <h3>A student developer with a practical mindset.</h3>
+                <p>I am pursuing B.E. Computer Science and Engineering at National Engineering College, Kovilpatti. My current interest is web development, with a growing focus on Java applications and problem solving.</p>
+                <p>I prefer clean layouts, clear navigation, and features that directly help users. Each project is an opportunity to improve my coding, debugging, and deployment skills.</p>
+                <div class="quote-line">“Build it clearly. Improve it continuously.”</div>
+              </article>
+
+              <div class="about-stack">
+                <article class="surface compact-card">
+                  <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <div>
+                    <small>Education</small>
+                    <h3>B.E. Computer Science & Engineering</h3>
+                    <p>National Engineering College, Kovilpatti · 2024–2028</p>
+                  </div>
+                </article>
+                <article class="surface compact-card">
+                  <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <small>Based in</small>
+                    <h3>Tirunelveli, Tamil Nadu</h3>
+                    <p>Available for internships and collaborative student projects.</p>
+                  </div>
+                </article>
+                <article class="surface compact-card">
+                  <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                  <div>
+                    <small>Current goal</small>
+                    <h3>Become a strong full-stack developer</h3>
+                    <p>Strengthening frontend fundamentals, Java, Spring Boot, and DSA.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="skills" data-panel="skills" aria-labelledby="skills-title">
+        <div class="panel-scroll">
+          <div class="shell content-shell">
+            <div class="section-heading">
+              <span class="section-number">02</span>
+              <div>
+                <p class="kicker">Small, honest toolkit</p>
+                <h2 id="skills-title">Skills I use</h2>
+              </div>
+              <p>Only the technologies I currently use or actively learn.</p>
+            </div>
+
+            <div class="skills-board">
+              <div class="skill-card surface tilt-card">
+                <i class="fa-brands fa-html5"></i>
+                <div><h3>HTML5</h3><p>Semantic page structure</p></div>
+                <span>Comfortable</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <div><h3>CSS3</h3><p>Responsive layouts and animations</p></div>
+                <span>Comfortable</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-brands fa-js"></i>
+                <div><h3>JavaScript</h3><p>DOM, events, and basic logic</p></div>
+                <span>Growing</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-brands fa-java"></i>
+                <div><h3>Java</h3><p>OOP and application development</p></div>
+                <span>Growing</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-solid fa-leaf"></i>
+                <div><h3>Spring Boot</h3><p>Backend application basics</p></div>
+                <span>Learning</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-solid fa-c"></i>
+                <div><h3>C / C++</h3><p>Programming fundamentals</p></div>
+                <span>Comfortable</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-solid fa-database"></i>
+                <div><h3>SQL</h3><p>Queries and database basics</p></div>
+                <span>Learning</span>
+              </div>
+              <div class="skill-card surface tilt-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <div><h3>Git & GitHub</h3><p>Version control and deployment</p></div>
+                <span>Comfortable</span>
+              </div>
+            </div>
+
+            <div class="learning-strip surface">
+              <span><i class="fa-solid fa-spinner"></i> Currently improving</span>
+              <div class="marquee" aria-label="Currently learning topics">
+                <div>Data Structures & Algorithms · Spring Boot · Responsive UI · JavaScript · GitHub Deployment · Data Structures & Algorithms · Spring Boot · Responsive UI · JavaScript · GitHub Deployment ·</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="projects" data-panel="projects" aria-labelledby="projects-title">
+        <div class="panel-scroll">
+          <div class="shell content-shell">
+            <div class="section-heading">
+              <span class="section-number">03</span>
+              <div>
+                <p class="kicker">Built and deployed</p>
+                <h2 id="projects-title">Selected projects</h2>
+              </div>
+              <p>Use the tabs or arrow keys to inspect each project.</p>
+            </div>
+
+            <div class="project-console surface">
+              <div class="project-tabs" role="tablist" aria-label="Project selector">
+                <button class="project-tab active" type="button" data-project="0" role="tab" aria-selected="true"><span>01</span> Street Food Finder</button>
+                <button class="project-tab" type="button" data-project="1" role="tab" aria-selected="false"><span>02</span> Tour Booking</button>
+                <button class="project-tab" type="button" data-project="2" role="tab" aria-selected="false"><span>03</span> Secure File Manager</button>
+              </div>
+
+              <div class="project-stage">
+                <article class="project-view active" data-project-view="0">
+                  <div class="project-art food-art">
+                    <div class="art-grid"></div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="art-label">Find nearby flavours</span>
+                  </div>
+                  <div class="project-copy">
+                    <div class="project-index">Project 01 · Frontend web application</div>
+                    <h3>Street Food Finder</h3>
+                    <p>A responsive web experience that helps people discover street-food stalls using location or food-name based navigation.</p>
+                    <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <ul>
+                      <li>User and stall-owner entry flows</li>
+                      <li>Food and location focused discovery</li>
+                      <li>Deployed as a live web project</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button primary" href="https://streetfoodfinder.vercel.app" target="_blank" rel="noopener noreferrer">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      <a class="button secondary" href="https://github.com/rsamuel1729-png/streetfoodfinder" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source code</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-view" data-project-view="1">
+                  <div class="project-art travel-art">
+                    <div class="route-line"></div>
+                    <i class="fa-solid fa-plane"></i>
+                    <span class="art-label">Plan. Book. Explore.</span>
+                  </div>
+                  <div class="project-copy">
+                    <div class="project-index">Project 02 · Multi-page website</div>
+                    <h3>Tour Booking Management System</h3>
+                    <p>A tour-booking website where users can browse destinations, inspect packages, create an account, and move through a simple booking flow.</p>
+                    <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <ul>
+                      <li>Destination and package browsing</li>
+                      <li>Sign-in and booking screens</li>
+                      <li>Responsive, multi-page navigation</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button primary" href="https://tourbookingmanagementsystem.vercel.app" target="_blank" rel="noopener noreferrer">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      <a class="button secondary" href="https://github.com/rsamuel1729-png/tourbookingmanagementsystem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source code</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="project-view" data-project-view="2">
+                  <div class="project-art security-art">
+                    <div class="lock-rings"></div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span class="art-label">Secure file workspace</span>
+                  </div>
+                  <div class="project-copy">
+                    <div class="project-index">Project 03 · Java / Spring application</div>
+                    <h3>Secure File Management System</h3>
+                    <p>A secure file-management application featuring authentication, file operations, encryption and decryption, access control, session handling, and audit logs.</p>
+                    <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>HTML/CSS/JS</span></div>
+                    <ul>
+                      <li>Upload, download, delete, and metadata handling</li>
+                      <li>Authentication and role-aware access control</li>
+                      <li>Encryption workflow and audit logging</li>
+                    </ul>
+                    <div class="project-actions">
+                      <a class="button primary" href="https://file-management-system-springboot.vercel.app" target="_blank" rel="noopener noreferrer">Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      <a class="button secondary" href="https://github.com/rsamuel1729-png/file-management-system-springboot" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source code</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="project-controls">
+                <button type="button" id="projectPrev" aria-label="Previous project"><i class="fa-solid fa-arrow-left"></i></button>
+                <span id="projectCounter">01 / 03</span>
+                <button type="button" id="projectNext" aria-label="Next project"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="certificates" data-panel="certificates" aria-labelledby="certificates-title">
+        <div class="panel-scroll">
+          <div class="shell content-shell certificates-shell">
+            <div class="section-heading">
+              <span class="section-number">04</span>
+              <div>
+                <p class="kicker">Verified learning</p>
+                <h2 id="certificates-title">Certificates</h2>
+              </div>
+              <p>Select any certificate to open a full-size viewer.</p>
+            </div>
+
+            <div class="certificate-gallery" id="certificateGallery">
+              <button class="certificate-card surface" type="button" data-image="assets/certificates/nptel-industry-4-iot.png" data-title="Introduction to Industry 4.0 and Industrial Internet of Things" data-meta="NPTEL · Elite · 82% · Jan–Apr 2026">
+                <img src="assets/certificates/nptel-industry-4-iot.png" alt="NPTEL certificate for Introduction to Industry 4.0 and Industrial Internet of Things">
+                <span class="certificate-shade"></span>
+                <span class="certificate-info"><small>NPTEL · 82%</small><strong>Industry 4.0 & IIoT</strong><em>Open certificate <i class="fa-solid fa-expand"></i></em></span>
+              </button>
+
+              <button class="certificate-card surface" type="button" data-image="assets/certificates/nptel-introduction-to-iot.png" data-title="Introduction to Internet of Things" data-meta="NPTEL · Elite · 81% · Jul–Oct 2025">
+                <img src="assets/certificates/nptel-introduction-to-iot.png" alt="NPTEL certificate for Introduction to Internet of Things">
+                <span class="certificate-shade"></span>
+                <span class="certificate-info"><small>NPTEL · 81%</small><strong>Introduction to IoT</strong><em>Open certificate <i class="fa-solid fa-expand"></i></em></span>
+              </button>
+
+              <button class="certificate-card surface" type="button" data-image="assets/certificates/nptel-technical-english.png" data-title="Technical English for Engineers" data-meta="NPTEL · Elite · 81% · Aug–Oct 2024">
+                <img src="assets/certificates/nptel-technical-english.png" alt="NPTEL certificate for Technical English for Engineers">
+                <span class="certificate-shade"></span>
+                <span class="certificate-info"><small>NPTEL · 81%</small><strong>Technical English</strong><em>Open certificate <i class="fa-solid fa-expand"></i></em></span>
+              </button>
+
+              <button class="certificate-card surface" type="button" data-image="assets/certificates/nptel-competitive-programming.png" data-title="Getting Started with Competitive Programming" data-meta="NPTEL · Elite · 67% · Jan–Apr 2026">
+                <img src="assets/certificates/nptel-competitive-programming.png" alt="NPTEL certificate for Getting Started with Competitive Programming">
+                <span class="certificate-shade"></span>
+                <span class="certificate-info"><small>NPTEL · 67%</small><strong>Competitive Programming</strong><em>Open certificate <i class="fa-solid fa-expand"></i></em></span>
+              </button>
+
+              <button class="certificate-card surface" type="button" data-image="assets/certificates/nptel-joy-of-computing-python.png" data-title="The Joy of Computing using Python" data-meta="NPTEL · Elite · 65% · Jan–Apr 2025">
+                <img src="assets/certificates/nptel-joy-of-computing-python.png" alt="NPTEL certificate for The Joy of Computing using Python">
+                <span class="certificate-shade"></span>
+                <span class="certificate-info"><small>NPTEL · 65%</small><strong>Joy of Computing with Python</strong><em>Open certificate <i class="fa-solid fa-expand"></i></em></span>
+              </button>
+
+              <button class="certificate-card surface" type="button" data-image="assets/certificates/tutedude-web-development-hackathon.png" data-title="Web Development Hackathon — Participation" data-meta="Tutedude · 48-hour online hackathon · Jul 25–27, 2025">
+                <img src="assets/certificates/tutedude-web-development-hackathon.png" alt="Tutedude Web Development Hackathon participation certificate">
+                <span class="certificate-shade"></span>
+                <span class="certificate-info"><small>Tutedude · Hackathon</small><strong>Web Development Hackathon</strong><em>Open certificate <i class="fa-solid fa-expand"></i></em></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="resume" data-panel="resume" aria-labelledby="resume-title">
+        <div class="panel-scroll">
+          <div class="shell content-shell">
+            <div class="section-heading">
+              <span class="section-number">05</span>
+              <div>
+                <p class="kicker">One-page overview</p>
+                <h2 id="resume-title">Resume</h2>
+              </div>
+              <p>Preview the document here or open the complete PDF.</p>
+            </div>
+
+            <div class="resume-layout">
+              <div class="resume-preview surface">
+                <img src="assets/resume_preview.png" alt="Preview of Samuel R's resume">
+              </div>
+              <div class="resume-copy">
+                <span class="resume-badge"><i class="fa-solid fa-file-pdf"></i> PDF document</span>
+                <h3>A quick summary of my education, projects, and technical foundation.</h3>
+                <p>The resume includes my current academic details, project work, technical skills, coding practice, and contact information.</p>
+                <div class="resume-actions">
+                  <a class="button primary" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a class="button secondary" href="assets/resume.pdf" download="Samuel_R_Resume.pdf"><i class="fa-solid fa-download"></i> Download PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="contact" data-panel="contact" aria-labelledby="contact-title">
+        <div class="panel-scroll">
+          <div class="shell content-shell contact-shell">
+            <div class="section-heading">
+              <span class="section-number">06</span>
+              <div>
+                <p class="kicker">Let’s connect</p>
+                <h2 id="contact-title">Start a conversation</h2>
+              </div>
+              <p>For internships, project discussions, or a simple hello.</p>
+            </div>
+
+            <div class="contact-layout">
+              <div class="contact-message">
+                <h3>Have an opportunity or idea?</h3>
+                <p>Send me a message and your default email application will open with the details prepared.</p>
+                <div class="contact-links">
+                  <a href="mailto:samuelxxx1207@gmail.com"><i class="fa-solid fa-envelope"></i><span><small>Email</small>samuelxxx1207@gmail.com</span></a>
+                  <a href="tel:+917603837694"><i class="fa-solid fa-phone"></i><span><small>Phone</small>+91 76038 37694</span></a>
+                  <a href="https://github.com/rsamuel1729-png" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span><small>GitHub</small>rsamuel1729-png</span></a>
+                  <a href="https://linkedin.com/in/samuel-1207-r" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i><span><small>LinkedIn</small>samuel-1207-r</span></a>
+                </div>
+              </div>
+
+              <form class="contact-form surface" id="contactForm">
+                <div class="form-row">
+                  <label for="contactName">Your name</label>
+                  <input id="contactName" name="name" type="text" autocomplete="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-row">
+                  <label for="contactEmail">Your email</label>
+                  <input id="contactEmail" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-row">
+                  <label for="contactMessage">Message</label>
+                  <textarea id="contactMessage" name="message" required placeholder="Tell me what you would like to discuss"></textarea>
+                </div>
+                <button class="button primary form-submit" type="submit">Prepare email <i class="fa-solid fa-paper-plane"></i></button>
+                <p class="form-note" id="formNote">No message is stored on this website.</p>
+              </form>
+            </div>
+
+            <footer class="panel-footer">
+              <span>© 2026 Samuel R</span>
+              <span>Designed and built with HTML, CSS & JavaScript</span>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="panel-indicator" aria-live="polite">
+    <span id="panelNumber">01</span>
+    <div class="indicator-line"><i id="indicatorProgress"></i></div>
+    <span>07</span>
+  </div>
+
+  <div class="navigation-hint" id="navigationHint">
+    <i class="fa-solid fa-computer-mouse"></i>
+    <span>Scroll, use the dock, or press ↑ ↓</span>
+  </div>
+
+  <div class="command-overlay" id="commandOverlay" aria-hidden="true">
+    <div class="command-palette" role="dialog" aria-modal="true" aria-labelledby="commandTitle">
+      <div class="command-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="commandInput" type="text" autocomplete="off" placeholder="Jump to a section..." aria-labelledby="commandTitle">
+        <kbd>Esc</kbd>
+      </div>
+      <div class="command-list" id="commandList">
+        <button type="button" data-command-target="home"><i class="fa-solid fa-house"></i><span><strong>Home</strong><small>Introduction and quick links</small></span><kbd>1</kbd></button>
+        <button type="button" data-command-target="about"><i class="fa-solid fa-user"></i><span><strong>About</strong><small>Background, education, and goals</small></span><kbd>2</kbd></button>
+        <button type="button" data-command-target="skills"><i class="fa-solid fa-code"></i><span><strong>Skills</strong><small>Current technical toolkit</small></span><kbd>3</kbd></button>
+        <button type="button" data-command-target="projects"><i class="fa-solid fa-layer-group"></i><span><strong>Projects</strong><small>Three deployed applications</small></span><kbd>4</kbd></button>
+        <button type="button" data-command-target="certificates"><i class="fa-solid fa-certificate"></i><span><strong>Certificates</strong><small>NPTEL and hackathon credentials</small></span><kbd>5</kbd></button>
+        <button type="button" data-command-target="resume"><i class="fa-solid fa-file-lines"></i><span><strong>Resume</strong><small>Preview or download the PDF</small></span><kbd>6</kbd></button>
+        <button type="button" data-command-target="contact"><i class="fa-solid fa-paper-plane"></i><span><strong>Contact</strong><small>Email, phone, and social links</small></span><kbd>7</kbd></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="certificate-modal" id="certificateModal" aria-hidden="true">
+    <button class="modal-close" id="certificateClose" type="button" aria-label="Close certificate viewer"><i class="fa-solid fa-xmark"></i></button>
+    <button class="modal-nav modal-prev" id="certificatePrev" type="button" aria-label="Previous certificate"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure class="certificate-viewer">
+      <img id="certificateImage" src="" alt="">
+      <figcaption><strong id="certificateTitle"></strong><span id="certificateMeta"></span></figcaption>
+    </figure>
+    <button class="modal-nav modal-next" id="certificateNext" type="button" aria-label="Next certificate"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
