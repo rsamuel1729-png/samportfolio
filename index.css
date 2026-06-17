@@ -467,7 +467,7 @@ kbd {
 .profile-card {
   position: relative;
   z-index: 3;
-  width: min(420px, 94%);
+  width: min(42px, 94%);
   overflow: hidden;
   border: 1px solid var(--border-strong);
   border-radius: 24px;
